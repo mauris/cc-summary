@@ -1,6 +1,6 @@
 {
   "name": "cc-summary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CodeCrunch student progress summary",
   "main": "index.js",
   "dependencies": {

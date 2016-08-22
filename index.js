@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require("fs");
 var parse = require('csv-parse');
 var Promise = require('bluebird');
