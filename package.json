@@ -1,0 +1,19 @@
+{
+  "name": "cc-summary",
+  "version": "1.0.0",
+  "description": "CodeCrunch student progress summary",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "csv": "^1.1.0"
+  },
+  "bin": {
+    "ccsum": "./index.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
