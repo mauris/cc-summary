@@ -22,10 +22,13 @@ var printSummary = function() {
     .forEach(function(studentId){
       students[studentId].completed.sort().reverse();
       console.log("Name:\t" + students[studentId].name);
+      console.log("ID:\t" + studentId);
       if (students[studentId].completed.length == 0) {
         console.log('\tNo attempt');
       } else {
-        console.log("\t" + students[studentId].completed[0]);
+        students[studentId].completed.forEach(function(attempt) {
+          console.log("\t" + attempt);
+        });
       }
       console.log('---')
     });
