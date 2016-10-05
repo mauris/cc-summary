@@ -20,13 +20,15 @@ var summary = [];
 var printSummary = function() {
   Object.keys(students)
     .forEach(function(studentId){
-      students[studentId].completed.sort().reverse();
-      console.log("Name:\t" + students[studentId].name);
+      var student = students[studentId];
+      student.completed.sort().reverse();
+      console.log("Name:\t" + student.name);
+      console.log("URL:\t" + student.url);
       console.log("ID:\t" + studentId);
-      if (students[studentId].completed.length == 0) {
+      if (student.completed.length == 0) {
         console.log('\tNo attempt');
       } else {
-        students[studentId].completed.forEach(function(attempt) {
+        student.completed.forEach(function(attempt) {
           console.log("\t" + attempt);
         });
       }
@@ -66,6 +68,7 @@ readAndParse('students.csv')
     nr.forEach(function(student) {
       students[student[0]] = {
         "name": student[1].trim(),
+        "url": student[2].trim(),
         "completed": []
       };
     });
